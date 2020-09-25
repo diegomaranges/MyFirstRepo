@@ -1,0 +1,299 @@
+/* General */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(23,224,48,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+/* Columns */
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%; }
+.col-3 { width: 28%; }
+.col-4 { width: 33.33%; }
+.col-5 { width: 41.66%; }
+.col-6 { width: 49%; }
+.col-7 { width: 58.33%; }
+.col-8 { width: 66.66%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33%; }
+.col-11 { width: 91.66%; }
+.col-12 { width: 100%; }
+
+/* Iframe */
+iframe {
+    height: 80px
+}
+
+/*----------------------------------------------*/
+/* Header */
+h1 {
+    margin-top: 60px;
+    font-size: 60px;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow: auto;
+}
+.navbar {
+    display: inline-flex;
+    justify-content: space-between;
+}
+li {
+    padding: 15px;
+    list-style: none;
+}
+a {
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    background-color: grey;
+    color: blue;
+    text-decoration: underline;
+}
+
+/*----------------------------------------------*/
+/* Main */
+h2 {
+    font-size: 40px;
+    margin: 10px 5%;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+}
+
+/* Section about us */
+div {
+    display: flex;
+    justify-content: space-between;
+}
+.parrafoAUs {
+    font-size: 20px;
+    padding: 5px;
+    text-align: justify;
+}
+
+/* Section songs */
+.song {
+    display: inline-table;
+    margin: 0 0.2%;
+    padding: 0;
+}
+.rotate-scale-up {
+	-webkit-animation: rotate-scale-up 0.65s linear both;
+	        animation: rotate-scale-up 0.65s linear both;
+}
+@-webkit-keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  @keyframes rotate-scale-up {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(2) rotateZ(180deg);
+              transform: scale(2) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+  }
+  
+  
+/* Section contact us */
+label {
+    width: max-content;
+    display: block;
+    padding: 0 15px;
+    font-size: 20px;
+}
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+textarea {
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+.myButton {
+	box-shadow:inset 0px 39px 0px -24px #3eff08;
+	background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:4px;
+	border:1px solid #18ab29;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	padding:6px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/*----------------------------------------------*/
+/* Footer */
+footer {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .col-6 {
+        width: 100%;
+    }
+
+    /*----------------------------------------------*/
+    /* Header */
+    h1 {
+        margin-top: 60px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /* Navbar */
+    .navbar {
+        display: inline-flex;
+        justify-content: space-between;
+    }
+    li {
+        padding: 15px;
+    }
+    a {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    /*----------------------------------------------*/
+    /* Main */
+    h2 {
+        font-size: 15px;
+        margin: 10px 0;
+    }*/
+
+    /* Section about us */
+    .parrafoAUs {
+        font-size: 10px;
+        padding: 1%;
+        text-align: justify;
+    }
+    .col-3{ width: 30%; }
+
+    /* Section songs */
+    .song {
+        display: inline-table;
+        margin: 0 0.2%;
+        padding: 0;
+    }
+    
+    /* Section contact us */
+    label {
+        width: max-content;
+        display: block;
+        padding: 0 15px;
+        font-size: 15px;
+    }
+    input[type=text] {
+        width: 40%;
+        font-size: 10px;
+        padding: 6px 10px;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+    textarea {
+        width: 80%;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+    .myButton {
+        margin: 0 10px;
+        font-size:15px;
+    }
+
+    /*----------------------------------------------*/
+    /* Footer */
+    footer {
+        padding: 20px;
+        font-size: 15px;
+    }
+
+}
+
+/*
+    Responsive
+    - desktop -> desktop
+    codigo css
+
+    - tablet -> dektop > tablet
+    @media only screen and (max-width: 728px)
+
+    - mobile -> dektop > tablet > mobile
+    @media only screen and (max-width: 320px)
+
+    --------------------------------------------------
+    Mobile First
+    -mobile -> mobile
+    codigo css
+
+    -tablet -> mobile > tablet
+    @media only screen and (min-width: 320px)
+    
+    -desktop -> mobile > tablet > desktop
+    @media only screen and (min-width: 728px)
+*/
